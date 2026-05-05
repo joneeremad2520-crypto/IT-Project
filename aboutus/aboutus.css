@@ -194,8 +194,6 @@ footer{
   border-top:1px solid rgba(255,255,255,0.1);
 }
 
-
-
 .about,
 .skills,
 .end{
@@ -209,4 +207,201 @@ footer{
 .end{
   opacity:1 !important;
   transform:translateY(0) !important;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767px) {
+    * {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 12px 15px;
+        top: 10px;
+        width: 95%;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    nav h2 {
+        font-size: 16px;
+    }
+
+    .abt {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .abt h1 {
+        font-size: 24px;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .text {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .text p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .skills {
+        flex-direction: column;
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .bar {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .tracks {
+        padding: 30px 15px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 20px 15px;
+    }
+
+    .end {
+        margin: 20px;
+        padding: 30px 15px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    footer {
+        padding: 25px 15px;
+        font-size: 12px;
+    }
+}
+
+/* Tablet Devices (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        padding: 12px 25px;
+        width: 92%;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    .abt {
+        padding: 20px;
+    }
+
+    .abt h1 {
+        font-size: 32px;
+    }
+
+    .about {
+        gap: 30px;
+        padding: 50px 25px;
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        width: 350px;
+    }
+
+    .text {
+        gap: 40px;
+        padding: 50px 25px;
+        flex-wrap: wrap;
+    }
+
+    .text p {
+        width: 45%;
+    }
+
+    .skills {
+        padding: 50px 25px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .bar {
+        width: 280px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tracks {
+        padding: 50px 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .end {
+        margin: 30px;
+        padding: 50px;
+    }
+
+    footer {
+        padding: 35px 25px;
+    }
+}
+
+/* Large Desktop (> 1024px) */
+@media (min-width: 1025px) {
+    nav {
+        width: 90%;
+    }
+
+    .about {
+        justify-content: space-between;
+    }
+
+    .text {
+        justify-content: space-between;
+    }
+
+    .skills {
+        justify-content: space-between;
+    }
+
+    .tracks {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }

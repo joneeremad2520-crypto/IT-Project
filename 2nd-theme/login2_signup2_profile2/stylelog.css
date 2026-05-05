@@ -242,3 +242,137 @@ footer{
     margin-top:200px ;
     width: 100%;
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767px) {
+    * {
+        font-size: 14px;
+    }
+
+    .header {
+        top: 8px;
+        width: 97%;
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .menu-btn {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .menu {
+        min-width: 150px;
+        top: 110%;
+    }
+
+    .menu li a {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 95%;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 100px;
+    }
+
+    .container h2 {
+        margin-bottom: 20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .input-box {
+        margin-bottom: 20px;
+    }
+
+    .input-box input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .input-box label {
+        font-size: 12px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .close-btn {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 25px 15px;
+        font-size: 12px;
+        margin-top: 50px;
+    }
+}
+
+/* Tablet Devices (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        width: 93%;
+        padding: 12px 25px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 450px;
+        padding: 25px;
+        margin-top: 150px;
+    }
+
+    .container h2 {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .input-box {
+        margin-bottom: 22px;
+    }
+
+    .buttons {
+        gap: 12px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 35px 25px;
+        margin-top: 100px;
+    }
+}
+
+/* Large Desktop (> 1024px) */
+@media (min-width: 1025px) {
+    .header {
+        width: 95%;
+    }
+
+    .container {
+        width: 500px;
+    }
+}

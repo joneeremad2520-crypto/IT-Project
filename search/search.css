@@ -180,3 +180,110 @@ button:hover {
 button:active {
     transform: scale(0.98);
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile Devices (< 768px) */
+@media (max-width: 767px) {
+    * {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 12px 15px;
+        top: 10px;
+        width: 95%;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    body {
+        padding: 80px 15px 20px;
+    }
+
+    form {
+        width: 95%;
+        max-width: 100%;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    label {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    input {
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet Devices (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        padding: 12px 25px;
+        width: 92%;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    body {
+        padding: 100px 25px 20px;
+    }
+
+    form {
+        width: 95%;
+        max-width: 420px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        padding: 13px;
+        margin-bottom: 23px;
+    }
+
+    button {
+        padding: 13px;
+    }
+}
+
+/* Large Desktop (> 1024px) */
+@media (min-width: 1025px) {
+    nav {
+        width: 90%;
+    }
+
+    form {
+        max-width: 400px;
+    }
+}
