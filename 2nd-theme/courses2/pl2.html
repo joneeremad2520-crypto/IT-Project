@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Track | CS Club</title>
+    
+    
+    <link rel="stylesheet" href="courses2.css">
+    
+    <style>
+        
+        .pl-header {
+            background: #1195ff;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+       
+        .profile-area {
+            display: flex;
+            align-items: center;
+            margin-left: auto; 
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            background: #1195ff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .profile-icon:hover {
+            background: white;
+            color: #1195ff;
+            border-color: #1195ff;
+        }
+        
+        .language-section { 
+            padding: 50px 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+        
+        .pl-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .pl-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            padding: 30px;
+            transition: 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .pl-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: #1195ff;
+        }
+
+        .lang-tag {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .python-tag { background: #fff9e6; color: #ffbc00; }
+        .csharp-tag { background: #f3e5f5; color: #7b1fa2; }
+        .cpp-tag { background: #e8eaf6; color: #3f51b5; }
+
+        .course-meta {
+            border-top: 1px solid #f0f0f0;
+            margin-top: 20px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="left-section">
+            <nav>
+                <button class="menu-btn">☰</button>
+
+                <ul class="menu">
+                    <li><a href="../home2/index_1.html">Home</a></li>
+                    <li><a href="../courses2/courses2.html">Courses</a></li>
+                    <li><a href="../feedback2/feedback2.html">Feedback</a></li>
+                    <li><a href="../aboutus2/aboutus2.html">About Us</a></li> 
+                    <li><a href="../login2_signup2_profile2/login2.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">
+            CS CLUB
+        </div>
+
+        <div class="right-section">
+            <a href="../search2/search.html" class="btn">Search</a>
+            <a href="../login2_signup2_profile2/login2.html" class="btn">Login</a>
+        </div>
+
+    </header>
+
+    <header class="pl-header">
+        <h1>Programming Languages</h1>
+        <p>Build your foundational logic with industry-standard languages.</p>
+    </header>
+
+    
+    <section class="language-section">
+        <h2 style="border-left: 5px solid #ffbc00; padding-left: 15px;">Python Mastery</h2>
+        <div class="pl-grid">
+            <div class="pl-card">
+                <span class="lang-tag python-tag">English</span>
+                <h3>Scientific Python Course</h3>
+                <p>By: freeCodeCamp.org</p>
+                <div class="course-meta">
+                    <span><i class="fas fa-clock"></i> 8h 41m</span>
+                    <span><i class="fas fa-play"></i> 1 Video Full</span>
+                </div>
+                <a href="https://youtu.be/qwAFL1597eM" class="track-btn" target="_blank" style="display: block; margin-top: 15px;">View Course</a>
+            </div>
+            <div class="pl-card">
+                <span class="lang-tag python-tag">Arabic</span>
+                <h3>كورس بايثون الكامل</h3>
+                <p>بواسطة: أسامة الزيرو</p>
+                <div class="course-meta">
+                    <span><i class="fas fa-clock"></i> 20h 24m</span>
+                    <span><i class="fas fa-list"></i> 152 Videos</span>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs" class="track-btn" target="_blank" style="display: block; margin-top: 15px;">ابدأ الآن</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="language-section" style="background: #fafafa; border-radius: 20px;">
+        <h2 style="border-left: 5px solid #7b1fa2; padding-left: 15px;">C# Programming</h2>
+        <div class="pl-grid">
+            <div class="pl-card">
+                <span class="lang-tag csharp-tag">English</span>
+                <h3>Full C# Tutorial</h3>
+                <p>By: freeCodeCamp.org</p>
+                <div class="course-meta">
+                    <span><i class="fas fa-clock"></i> 8h 17m</span>
+                    <span><i class="fas fa-play"></i> 1 Video Full</span>
+                </div>
+                <a href="https://youtu.be/YrtFtdTTfv0" class="track-btn" target="_blank" style="display: block; margin-top: 15px;">View Course</a>
+            </div>
+            <div class="pl-card">
+                <span class="lang-tag csharp-tag">Arabic</span>
+                <h3>أساسيات لغة #C</h3>
+                <p>بواسطة: محمد المهدي</p>
+                <div class="course-meta">
+                    <span><i class="fas fa-clock"></i> 16h 45m</span>
+                    <span><i class="fas fa-list"></i> 59 Videos</span>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI" class="track-btn" target="_blank" style="display: block; margin-top: 15px;">ابدأ الآن</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="language-section">
+        <h2 style="border-left: 5px solid #3f51b5; padding-left: 15px;">C++ Development</h2>
+        <div class="pl-grid">
+            <div class="pl-card">
+                <span class="lang-tag cpp-tag">English</span>
+                <h3>C++ Tutorial for Beginners</h3>
+                <p>By: freeCodeCamp.org</p>
+                <div class="course-meta">
+                    <span><i class="fas fa-clock"></i> 4h 01m</span>
+                    <span><i class="fas fa-play"></i> 1 Video Full</span>
+                </div>
+                <a href="https://youtu.be/vLnPwxZdW4Y" class="track-btn" target="_blank" style="display: block; margin-top: 15px;">View Course</a>
+            </div>
+            <div class="pl-card">
+                <span class="lang-tag cpp-tag">Arabic</span>
+                <h3>دورة لغة ++C</h3>
+                <p>بواسطة: أسامة الزيرو</p>
+                <div class="course-meta">
+                    <span><i class="fas fa-clock"></i> 11h 18m</span>
+                    <span><i class="fas fa-list"></i> 78 Videos</span>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS" class="track-btn" target="_blank" style="display: block; margin-top: 15px;">ابدأ الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+       
+
+        <p>
+            © 2026 CS CLUB. All Rights Reserved. 
+        </p>
+
+    </footer>
+
+
+<script src="courses2.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CS CLUB</title>
+    <link rel="stylesheet" href="profile2.css">
+</head>
+<body>
+    
+  
+    <header class="header">
+        <div class="left-section">
+            <nav>
+                <button class="menu-btn" id="menuToggle">☰</button>
+                <ul class="menu" id="navMenu">
+                    <li><a href="../home2/index_1.html">Home</a></li>
+        <li><a href="../courses2/courses2.html">Courses</a></li>
+        <li><a href="../feedback2/feedback2.html">Feedback</a></li>
+        <li><a href="../aboutus2/aboutus2.html">About Us</a></li> 
+        <li><a href="../login2_signup2_profile2/profile2.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">CS CLUB</div>
+
+        <div class="right-section">
+           <a href="../search2/search2.html" class="btn">Search</a>
+            <a href="../login2_signup2_profile2/login2.html" class="btn">Login</a>
+        </div>
+    </header>
+
+   
+    <main class="content-wrapper">
+        <div class="profile-data">
+            <h2>Your Profile</h2>
+            
+            <div class="table">
+                <div class="row1">
+                    <span class="col1">Name:</span>
+                    <span class="col2" id="name">John Doe</span>
+                </div>
+                
+                <div class="row2">
+                    <span class="col1">Email:</span>
+                    <span class="col2" id="email">john.doe@example.com</span>
+                </div>
+                
+                <div class="row3">
+                    <span class="col1">Password:</span>
+                    <span class="col2" id="password">********</span>
+                </div>
+            </div>
+
+            <button class="logout-btn" onclick="logout()">Log Out</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Skilled Education. All Rights Reserved.</p>
+    </footer>
+
+    <script src="profile2.js"></script>
+</body>
+</html>

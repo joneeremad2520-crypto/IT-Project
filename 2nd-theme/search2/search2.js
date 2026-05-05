@@ -1,0 +1,68 @@
+
+    const menuButton = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
+    const logo = document.querySelector(".logo");
+
+
+
+    if (menuButton && menu) {
+
+        menuButton.onclick = function () {
+
+            menu.classList.toggle("active");
+
+        };
+
+    }
+
+
+    
+    if (logo) {
+
+        logo.onclick = function () {
+
+            window.location.href = "index.html";
+
+        };
+
+    }
+
+
+    
+    const buttons = document.querySelectorAll(".btn");
+
+    for (let i = 0; i < buttons.length; i++) {
+
+        buttons[i].onclick = function () {
+
+            let text = this.innerText;
+
+
+            if (text == "About Us") {
+
+                window.location.href = "about.html";
+
+            }
+
+            else if (text == "Sign Up") {
+
+                window.location.href = "signup.html";
+
+            }
+
+            else if (text == "Search") {
+
+                window.location.href = "search.html";
+            
+
+            }
+
+            else if (text == "View Courses") {
+
+                window.location.href = "courses.html";
+
+            }
+
+        };
+
+    }

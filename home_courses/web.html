@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Track | CS CLUB</title>
+
+    <style>
+        :root{
+            --gold:#f4b400;
+            --bg:#0a0a0a;
+            --card-bg:#111;
+            --border:#222;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:var(--bg);
+            color:white;
+            line-height:1.6;
+        }
+
+        
+        .navbar{
+            padding:20px 40px;
+            border-bottom:1px solid var(--border);
+            display:flex;
+            align-items:center;
+        }
+
+        .logo{
+            color:var(--gold);
+            text-decoration:none;
+            font-size:1.4rem;
+            font-weight:900;
+            letter-spacing:1px;
+            transition:.3s;
+        }
+
+        .logo:hover{
+            color:white;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        header{
+            padding:40px 0;
+            border-bottom:1px solid var(--border);
+            margin-bottom:40px;
+        }
+
+        header h1{
+            color:var(--gold);
+            font-size:2rem;
+            margin-bottom:10px;
+        }
+
+        
+        .roadmap{
+            position:relative;
+            padding-left:30px;
+            border-left:1px solid var(--gold);
+            margin-left:10px;
+            margin-bottom:60px;
+        }
+
+        .step{
+            position:relative;
+            margin-bottom:40px;
+        }
+
+        .step::before{
+            content:'';
+            position:absolute;
+            left:-36px;
+            top:5px;
+            width:10px;
+            height:10px;
+            background:var(--gold);
+            border-radius:50%;
+        }
+
+        .course-card{
+            padding:5px 10px;
+        }
+
+        .course-card h3{
+            font-size:1.4rem;
+            margin-bottom:8px;
+        }
+
+        .course-details{
+            color:#888;
+            font-size:.95rem;
+            margin-bottom:15px;
+            display:block;
+        }
+
+        .course-details b{
+            color:var(--gold);
+            font-weight:500;
+        }
+
+        .btn-link{
+            color:var(--gold);
+            text-decoration:none;
+            border:1px solid var(--gold);
+            padding:8px 18px;
+            border-radius:6px;
+            display:inline-block;
+            transition:.3s;
+        }
+
+        .btn-link:hover{
+            background:var(--gold);
+            color:black;
+        }
+
+        
+        .rtl{
+            direction:rtl;
+            text-align:right;
+        }
+
+        .roadmap.rtl{
+            border-left:none;
+            border-right:1px solid var(--gold);
+            padding-left:0;
+            padding-right:30px;
+            margin-left:0;
+            margin-right:10px;
+        }
+
+        .roadmap.rtl .step::before{
+            left:auto;
+            right:-36px;
+        }
+
+        
+        .gym-section{
+            margin-top:80px;
+            padding-top:40px;
+            border-top:1px solid var(--border);
+        }
+
+        .gym-title{
+            text-align:center;
+            color:var(--gold);
+            font-size:1.8rem;
+            margin-bottom:30px;
+            display:block;
+        }
+
+        .gym-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .gym-card{
+            background:var(--card-bg);
+            border:1px solid var(--border);
+            padding:20px;
+            border-radius:12px;
+            text-align:center;
+            transition:.3s;
+        }
+
+        .gym-card:hover{
+            border-color:var(--gold);
+            transform:translateY(-5px);
+        }
+
+        .gym-card h4{
+            margin-bottom:10px;
+        }
+
+        .gym-card p{
+            color:#777;
+            font-size:.9rem;
+            margin-bottom:15px;
+        }
+
+        footer{
+            text-align:center;
+            padding:60px 0;
+            color:#444;
+            font-size:.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <h1>
+            <a href="index.html" class="logo">CS CLUB</a>
+        </h1>
+    </nav>
+
+
+    <div class="container">
+
+        
+        <header>
+            <h1>Web Development Professional Path</h1>
+
+            <p style="color:#666;">
+                Follow these steps sequentially to master Front-End, Back-End, and Full-Stack Development.
+            </p>
+        </header>
+
+
+       
+        <h2 style="color:var(--gold); margin-bottom:30px;">
+            Step 1: English Curriculum
+        </h2>
+
+        <div class="roadmap">
+
+            <div class="step">
+                <div class="course-card">
+
+                    <h3>Front-End Development</h3>
+
+                    <span class="course-details">
+                        Duration: <b>46h 38m 12s</b> |
+                        Videos: <b>5</b> |
+                        Instructor: <b>Prashant Sir</b>
+                    </span>
+
+                    <a href="https://youtube.com/playlist?list=PL78RhpUUKSwfYr_bKHq7SWfTCBGad_xxP"
+                       target="_blank"
+                       class="btn-link">
+                        View Course
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="course-card">
+
+                    <h3>Back-End Development</h3>
+
+                    <span class="course-details">
+                        Duration: <b>66h 30m 59s</b> |
+                        Videos: <b>17</b> |
+                        Instructor: <b>freeCodeCamp</b>
+                    </span>
+
+                    <a href="https://youtube.com/playlist?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM"
+                       target="_blank"
+                       class="btn-link">
+                        View Course
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="course-card">
+
+                    <h3>Full-Stack Development</h3>
+
+                    <span class="course-details">
+                        Duration: <b>81h 22m 49s</b> |
+                        Videos: <b>31</b> |
+                        Instructor: <b>Edureka</b>
+                    </span>
+
+                    <a href="https://youtube.com/playlist?list=PL9ooVrP1hQOGTHk2auXsk3cyqRBbbsQ6l"
+                       target="_blank"
+                       class="btn-link">
+                        View Course
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+       
+        <div class="rtl">
+
+            <h2 style="color:var(--gold); margin-bottom:30px;">
+                الخطوة الثانية: المصادر العربية
+            </h2>
+
+            <div class="roadmap rtl">
+
+
+                <div class="step">
+                    <div class="course-card">
+
+                        <h3>Front-End Development</h3>
+
+                        <span class="course-details">
+                            المدة: <b>50h 3m 29s</b> |
+                            الفيديوهات: <b>8</b> |
+                            المحاضر: <b>أسامة الزيرو</b>
+                        </span>
+
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAzhFD3niPAa1C1gXG4cs14J"
+                           target="_blank"
+                           class="btn-link">
+                            ابدأ الآن
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="course-card">
+
+                        <h3>Back-End Development</h3>
+
+                        <span class="course-details">
+                            المدة: <b>20h 21m 59s</b> |
+                            الفيديوهات: <b>17</b> |
+                            المحاضر: <b>Hamza Rashed</b>
+                        </span>
+
+                        <a href="https://youtube.com/playlist?list=PLpSOK_rijUlnoSM5bIlfmuKa3H7XaqAyF"
+                           target="_blank"
+                           class="btn-link">
+                            ابدأ الآن
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="course-card">
+
+                        <h3>Full-Stack Development</h3>
+
+                        <span class="course-details">
+                            المدة: <b>22h 14m 17s</b> |
+                            الفيديوهات: <b>69</b> |
+                            المحاضر: <b>Hossam Magdy</b>
+                        </span>
+
+                        <a href="https://youtube.com/playlist?list=PLVrN2LRb7eT2B6v1EwsCS28QkkDTZ5LRm"
+                           target="_blank"
+                           class="btn-link">
+                            ابدأ الآن
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+       
+        <div class="gym-section">
+
+            <span class="gym-title">
+                CODE GYM 💪
+            </span>
+
+            <div class="gym-grid">
+
+                <div class="gym-card">
+
+                    <h4>Frontend Mentor</h4>
+
+                    <p>
+                        Practice real UI challenges and improve your HTML, CSS and JavaScript skills.
+                    </p>
+
+                    <a href="https://frontendmentor.io"
+                       class="btn-link"
+                       target="_blank">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+                <div class="gym-card">
+
+                    <h4>Codewars</h4>
+
+                    <p>
+                        Improve your programming logic with hundreds of coding challenges.
+                    </p>
+
+                    <a href="https://codewars.com"
+                       class="btn-link"
+                       target="_blank">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+                <div class="gym-card">
+
+                    <h4>GitHub</h4>
+
+                    <p>
+                        Build your portfolio, publish projects and collaborate with developers.
+                    </p>
+
+                    <a href="https://github.com"
+                       class="btn-link"
+                       target="_blank">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        © 2026 CS CLUB | WEB TRACK SYSTEM
+    </footer>
+
+</body>
+</html>

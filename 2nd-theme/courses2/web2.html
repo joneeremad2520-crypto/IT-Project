@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Path | CS Club</title>
+    
+    <link rel="stylesheet" href="courses2.css"> 
+    
+    <style>
+        :root {
+            --ai-primary: #1195ff;
+            --ai-blue: #3b82f6;
+            --ai-orange: #ea580c;
+        }
+
+        .ai-hero {
+            background: #1195ff;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .ai-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+
+        .ai-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ai-tag {
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .tag-en { background: #dbeafe; color: #1e40af; }
+        .tag-ar { background: #ffedd5; color: #9a3412; }
+        .tag-gym { background: #f1f5f9; color: #475569; }
+
+        .meta-info {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .meta-info p {
+            font-size: 14px;
+            color: #64748b;
+            margin: 5px 0;
+        }
+
+        .meta-info i { margin-right: 8px; color: var(--ai-blue); }
+
+        .btn-start {
+            display: block;
+            text-align: center;
+            background: var(--ai-blue);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .rtl-section { direction: rtl; text-align: right; }
+        .rtl-section .meta-info i { margin-left: 8px; margin-right: 0; }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="left-section">
+            <nav>
+                <button class="menu-btn">☰</button>
+
+                <ul class="menu">
+                    <li><a href="../home2/index_1.html">Home</a></li>
+                    <li><a href="../courses2/courses2.html">Courses</a></li>
+                    <li><a href="../feedback2/feedback2.html">Feedback</a></li>
+                    <li><a href="../aboutus2/aboutus2.html">About Us</a></li> 
+                    <li><a href="../login2_signup2_profile2/login2.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">
+            CS CLUB
+        </div>
+
+        <div class="right-section">
+            <a href="../search2/search.html" class="btn">Search</a>
+            <a href="../login2_signup2_profile2/login2.html" class="btn">Login</a>
+        </div>
+
+    </header>
+
+    
+    <section class="ai-hero">
+        <h1>Web Development Track</h1>
+        <p>Your Comprehensive Roadmap to Master Front-end, Back-end & Fullstack Development</p>
+    </section>
+
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        
+        <section class="track-section">
+            <h2 style="border-left: 5px solid var(--ai-blue); padding-left: 15px; margin-bottom: 30px;">Section 1: English Curriculum</h2>
+            <div class="ai-grid">
+                
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-en">English</span>
+                        <h3>Front End English Course</h3>
+                        <p>By Complete Coding by Prashant Sir</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> Duration: <b>46 hours, 38 minutes, 12 seconds</b></p>
+                        <p><i class="fas fa-video"></i> Videos: <b>5 Videos</b></p>
+                        <a href="https://youtube.com/playlist?list=PL78RhpUUKSwfYr_bKHq7SWfTCBGad_xxP&si=x8HY_9FfV1DjCa0V" target="_blank" class="btn-start">View Course</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-en">English</span>
+                        <h3>Back End English Course</h3>
+                        <p>By freeCodeCamp.org</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> Duration: <b>66 hours, 30 minutes, 59 seconds</b></p>
+                        <p><i class="fas fa-video"></i> Videos: <b>17 Videos</b></p>
+                        <a href="https://youtube.com/playlist?list=PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM&si=U16CWyD4RrIBTKwb" target="_blank" class="btn-start">View Course</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-en">English</span>
+                        <h3>Fullstack English Course</h3>
+                        <p>By Edureka</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> Duration: <b>81 hours, 22 minutes, 49 seconds</b></p>
+                        <p><i class="fas fa-video"></i> Videos: <b>31 Videos</b></p>
+                        <a href="https://youtube.com/playlist?list=PL9ooVrP1hQOGTHk2auXsk3cyqRBbbsQ6l&si=aJ4KUZi0B6-7ZXjQ" target="_blank" class="btn-start">View Course</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="track-section rtl-section">
+            <h2 style="border-right: 5px solid var(--ai-orange); padding-right: 15px; margin-bottom: 30px;">المصادر العربية</h2>
+            <div class="ai-grid">
+                
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-ar">بالعربية</span>
+                        <h3>Front End Arabic Course</h3>
+                        <p>بواسطة: أسامة الزيرو (Elzero Web School)</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> المدة: <b>50 ساعة، 3 دقائق، 29 ثانية</b></p>
+                        <p><i class="fas fa-video"></i> المحتوى: <b>8 فيديوهات</b></p>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAzhFD3niPAa1C1gXG4cs14J&si=dvF9Vk0ZPu4hmxCd" target="_blank" class="btn-start" style="background: var(--ai-orange);">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-ar">بالعربية</span>
+                        <h3>Back End Arabic Course</h3>
+                        <p>بواسطة: حمزة راشد (HR Channel)</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> المدة: <b>20 ساعة، 21 دقيقة، 59 ثانية</b></p>
+                        <p><i class="fas fa-video"></i> المحتوى: <b>17 فيديو</b></p>
+                        <a href="https://youtube.com/playlist?list=PLpSOK_rijUlnoSM5bIlfmuKa3H7XaqAyF&si=e_XD_sX1g9WgFwRv" target="_blank" class="btn-start" style="background: var(--ai-orange);">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-ar">بالعربية</span>
+                        <h3>Fullstack Arabic Course</h3>
+                        <p>بواسطة: حسام مجدي (Hossam Magdy Balaha)</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> المدة: <b>22 ساعة، 14 دقيقة، 17 ثانية</b></p>
+                        <p><i class="fas fa-video"></i> المحتوى: <b>69 فيديو</b></p>
+                        <a href="https://youtube.com/playlist?list=PLVrN2LRb7eT2B6v1EwsCS28QkkDTZ5LRm&si=g2sfMyQLMVo_6kY-" target="_blank" class="btn-start" style="background: var(--ai-orange);">ابدأ الآن</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="track-section">
+            <h2 style="text-align: center; margin-bottom: 40px;">WEB-GYM 💪</h2>
+            <div class="ai-grid">
+                
+                <div class="ai-card" style="border-top: 4px solid #3b82f6;">
+                    <span class="ai-tag tag-gym">Practice</span>
+                    <h3>Frontend Mentor</h3>
+                    <p>Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JS challenges.</p>
+                    <a href="https://www.frontendmentor.io" target="_blank" class="btn-start" style="background:#3b82f6">Enter Gym</a>
+                </div>
+
+                <div class="ai-card" style="border-top: 4px solid #facc15;">
+                    <span class="ai-tag tag-gym">Challenges</span>
+                    <h3>Codewars</h3>
+                    <p>Train on kata in JavaScript, Python, and more to sharpen your logic and back-end skills.</p>
+                    <a href="https://www.codewars.com" target="_blank" class="btn-start" style="background:#facc15; color:#333">Enter Gym</a>
+                </div>
+
+                <div class="ai-card" style="border-top: 4px solid #ef4444;">
+                    <span class="ai-tag tag-gym">Environment</span>
+                    <h3>CodePen</h3>
+                    <p>The best place to build, test, and discover front-end code in a live social development environment.</p>
+                    <a href="https://codepen.io" target="_blank" class="btn-start" style="background:#ef4444">Enter Gym</a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 CS CLUB. All Rights Reserved.</p>
+    </footer>
+
+    <script src="courses2.js"></script>
+</body>
+</html>

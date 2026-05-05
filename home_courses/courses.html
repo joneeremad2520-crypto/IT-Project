@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Club - Courses</title>
+    
+    <style>
+        :root {
+            --gold: #f4b400;
+            --dark-bg:#081718;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; transition: 0.4s ease; }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--dark-bg);
+            background-image: radial-gradient(circle at top right, rgba(20, 220, 246, 0.05), transparent);
+            color: white;
+            min-height: 100vh;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            margin: 20px auto;
+            width: 90%;
+            position: sticky;
+            top: 20px;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 24px; font-weight: bold; color: var(--gold); letter-spacing: 1px; }
+
+        
+        .search-container {
+            display: flex;
+            gap: 10px;
+            flex-grow: 0.5;
+            justify-content: center;
+        }
+
+        .search-box {
+            width: 60%;
+            padding: 10px 15px;
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            background: rgba(255,255,255,0.05);
+            color: white;
+            outline: none;
+        }
+
+        .btn-search {
+            padding: 8px 20px;
+            border-radius: 12px;
+            border: none;
+            background: var(--gold);
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border);
+        }
+
+        nav a:hover { 
+            background: var(--gold);
+            color: black;
+        }
+
+        
+        .grid-container {
+            display: grid;
+            
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .course-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 25px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            height: fit-content;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+        }
+
+        
+        .image-wrapper {
+            width: 100%;
+            height: 190px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background: #000;
+        }
+
+        .course-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .course-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .morph-btn {
+            height: 50px;
+            width: 100%;
+            background: var(--gold);
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .t1 { color: black; font-weight: bold; font-size: 16px; }
+
+        .morph-btn:hover { background: white; }
+
+        footer { text-align: center; padding: 40px; color: #666; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">CS CLUB</a>
+        
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search for tracks...">
+            <button class="btn-search">Search</button>
+        </div>
+
+    </header>
+
+    <div class="grid-container">
+        <div class="course-card">
+            <div class="image-wrapper">
+                <img src="ai2.png" alt="AI" class="course-img">
+            </div>
+            <div class="course-title">Artificial Intelligence</div>
+            <div class="morph-btn" onclick="location.href='ai-track.html'">
+                <span class="t1">View Details</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="image-wrapper">
+                <img src="ui-ux.jpg" alt="Cyber" class="course-img">
+            </div>
+            <div class="course-title">UI/UX</div>
+            <div class="morph-btn" onclick="location.href='ui-ux.html'">
+                <span class="t1">View Details</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="image-wrapper">
+                <img src="web.png" alt="Web" class="course-img">
+            </div>
+            <div class="course-title">Web-Development</div>
+            <div class="morph-btn" onclick="location.href='web.html'">
+                <span class="t1">View Details</span>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <div class="image-wrapper">
+                <img src="coding.png" alt="Coding" class="course-img">
+            </div>
+            <div class="course-title">Programming Languages</div>
+            <div class="morph-btn" onclick="location.href='pl.html'">
+                <span class="t1">View Details</span>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: black; color: white; text-align:center; padding:40px;">
+    <p>© 2026 CS CLUB. All Rights Reserved.</p>
+</footer>
+    <script src="js.js"></script>
+
+</body>
+</html>

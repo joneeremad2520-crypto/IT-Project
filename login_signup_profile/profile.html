@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile - CS Club</title>
+    <link rel="stylesheet" href="signup_login_profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container" style="width: 450px;">
+        <div id="pAvatar" style="width:80px; height:80px; background:var(--accent-color); border-radius:50%; margin:auto; display:flex; align-items:center; justify-content:center; color:#000; font-size:30px; font-weight:bold;"></div>
+        <body class="home-page">
+
+<header class="glass-header">
+
+    <div class="logo">CS CLUB</div>
+
+    <nav class="nav">
+        <a href="../home_courses/index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="../feedback/feedback.html">Feedback</a>
+        <a href="../login_signup_profile/profile.html">Profile</a>
+        
+
+    </nav>
+
+</header>
+   
+</header>
+        <h2>Your Profile</h2>
+        <table>
+            <tr>
+                <td style="color: var(--accent-color);">Full Name:</td>
+                <td id="pName"></td>
+            </tr>
+            <tr>
+                <td style="color: var(--accent-color);">Email:</td>
+                <td id="pEmail"></td>
+            </tr>
+            <tr>
+                <td style="color: var(--accent-color);">Password:</td>
+                <td style="display: flex; align-items: center; justify-content: space-between;">
+                    
+                    <span id="pPassword">******</span>
+                    <i class="fa fa-eye-slash" id="toggleIcon" style="cursor: pointer; color: var(--text-gray); margin-left: 10px;"></i>
+                </td>
+            </tr>
+        </table>
+
+        <button onclick="logout()" class="btn-submit" style="margin-top: 20px; background: transparent; border: 1px solid var(--accent-color); color: white;">Log Out</button>
+    </div>
+    <footer style="background-color: black; color: white; text-align:center; padding:20px 0; width:100%; position:fixed; bottom:0; left:0;">
+        <p>© 2026 CS CLUB. All Rights Reserved.</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

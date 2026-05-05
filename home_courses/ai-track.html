@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Path | CS Club</title>
+    
+    <style>
+        :root {
+            --gold: #f4b400;
+            --bg: #0a0a0a;
+            --card-bg: #111;
+            --border: #222;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--bg); color: white; line-height: 1.6; }
+
+       
+        .navbar {
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .logo:hover { color: white; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        header { padding: 40px 0; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+        header h1 { color: var(--gold); font-size: 2rem; }
+
+       
+        .roadmap {
+            position: relative;
+            padding-left: 30px;
+            border-left: 1px solid var(--gold);
+            margin-left: 10px;
+            margin-bottom: 60px;
+        }
+
+        .step { position: relative; margin-bottom: 40px; }
+
+        .step::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .course-card { padding: 5px 10px; }
+        .course-card h3 { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
+        
+        .course-details { 
+            color: #888; 
+            font-size: 0.95rem; 
+            margin-bottom: 15px;
+            display: block;
+        }
+        .course-details b { color: var(--gold); font-weight: 500; }
+
+        .btn-link {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid var(--gold);
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn-link:hover { background: var(--gold); color: black; }
+
+        
+        .gym-section {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        .gym-title { 
+            text-align: center; 
+            color: var(--gold); 
+            font-size: 1.8rem; 
+            margin-bottom: 30px; 
+            display: block;
+        }
+
+        .gym-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gym-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .gym-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .gym-card h4 { margin-bottom: 10px; color: #fff; }
+        .gym-card p { font-size: 0.85rem; color: #666; margin-bottom: 15px; }
+
+        .rtl { direction: rtl; text-align: right; }
+        .roadmap.rtl { border-left: none; border-right: 1px solid var(--gold); padding-left: 0; padding-right: 30px; margin-left: 0; margin-right: 10px; }
+        .roadmap.rtl .step::before { left: auto; right: -36px; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1><a href="index.html" class="logo">CS CLUB</a></h1>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>AI Professional Path</h1>
+            <p style="color: #555;">Follow these steps sequentially to master Artificial Intelligence.</p>
+        </header>
+
+        <h2 style="color: var(--gold); margin-bottom: 30px;">Step 1: English Curriculum</h2>
+        <div class="roadmap">
+            <div class="step">
+                <div class="course-card">
+                    <h3>Mathematics for Machine Learning</h3>
+                    <span class="course-details">
+                        Duration: <b>20 Hours</b> | Instructor: <b>Imperial College London</b> | Access: <b>Full Curriculum</b>
+                    </span>
+                    <a href="https://www.coursera.org/specializations/mathematics-machine-learning" class="btn-link" target="_blank">View Course</a>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="course-card">
+                    <h3>Python for Data Science & AI</h3>
+                    <span class="course-details">
+                        Duration: <b>25 Hours</b> | Instructor: <b>IBM Skills</b> | Access: <b>Full Curriculum</b>
+                    </span>
+                    <a href="https://www.coursera.org/learn/python-for-applied-data-science-ai" class="btn-link" target="_blank">View Course</a>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="course-card">
+                    <h3>Machine Learning Specialization</h3>
+                    <span class="course-details">
+                        Duration: <b>40 Hours</b> | Instructor: <b>Andrew Ng</b> | Access: <b>Full Curriculum</b>
+                    </span>
+                    <a href="https://www.coursera.org/specializations/machine-learning-introduction" class="btn-link" target="_blank">View Course</a>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="course-card">
+                    <h3>Deep Learning Specialization</h3>
+                    <span class="course-details">
+                        Duration: <b>65 Hours</b> | Instructor: <b>DeepLearning.AI</b> | Access: <b>Full Curriculum</b>
+                    </span>
+                    <a href="https://www.coursera.org/specializations/deep-learning" class="btn-link" target="_blank">View Course</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rtl">
+            <h2 style="color: var(--gold); margin-bottom: 30px;">الخطوة الثانية: المصادر العربية</h2>
+            <div class="roadmap rtl">
+                <div class="step">
+                    <div class="course-card">
+                        <h3>رياضيات الذكاء الاصطناعي</h3>
+                        <span class="course-details">
+                            المدة: <b>15 ساعة</b> | المحاضر: <b>هشام عاصم</b> | الوصول: <b>محتوى كامل</b>
+                        </span>
+                        <a href="https://www.youtube.com/playlist?list=PL6-3IRz2XF5VofS_V9_V8v-V55G4rW4x4" class="btn-link" target="_blank">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="course-card">
+                        <h3>بايثون للمبتدئين (الزيرو)</h3>
+                        <span class="course-details">
+                            المدة: <b>30 ساعة</b> | المحاضر: <b>أسامة الزيرو</b> | الوصول: <b>محتوى كامل</b>
+                        </span>
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mSip" class="btn-link" target="_blank">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="course-card">
+                        <h3>دورة تعلم الآلة الشاملة</h3>
+                        <span class="course-details">
+                            المدة: <b>25 ساعة</b> | المحاضر: <b>هشام عاصم</b> | الوصول: <b>محتوى كامل</b>
+                        </span>
+                        <a href="https://www.youtube.com/playlist?list=PL6-3IRz2XF5VofS_V9_V8v-V55G4rW4x4" class="btn-link" target="_blank">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="course-card">
+                        <h3>التعلم العميق والشبكات العصبية</h3>
+                        <span class="course-details">
+                            المدة: <b>15 ساعة</b> | المحاضر: <b>هشام عاصم</b> | الوصول: <b>محتوى كامل</b>
+                        </span>
+                        <a href="https://youtube.com/playlist?list=PL6-3IRz2XF5X-lzMZdmkvGAx1a3kIm7_I&si=HAEvD_ZJvmTRTpKD" class="btn-link" target="_blank">ابدأ الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gym-section">
+            <span class="gym-title">CODE-GYM 💪</span>
+            <div class="gym-grid">
+                <div class="gym-card">
+                    <h4>Kaggle Labs</h4>
+                    <p>The ultimate place to practice with real-world datasets and join AI competitions.</p>
+                    <a href="https://www.kaggle.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+                <div class="gym-card">
+                    <h4>Hugging Face</h4>
+                    <p>The "GitHub" of AI. Build, train, and deploy state-of-the-art machine learning models.</p>
+                    <a href="https://huggingface.co" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+                <div class="gym-card">
+                    <h4>Google Colab</h4>
+                    <p>Free cloud-based Jupyter notebooks to run your AI models on powerful GPUs for free.</p>
+                    <a href="https://colab.research.google.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer style="text-align: center; padding: 60px 0; color: #333; font-size: 0.8rem;">
+        © 2026 CS CLUB | AI TRACK SYSTEM
+    </footer>
+    <script src="js.js"></script>
+
+</body>
+</html>

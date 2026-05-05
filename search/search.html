@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="search.css">
+    <title>Search Page</title>
+</head>
+<body>
+    <nav class="nav">
+   <h2>CS Club</h2>
+
+   <div>
+      <a href="../home_courses/index.html">Home</a>
+      <a href="../home_courses/courses.html">Courses</a>
+      <a href="../feedback/feedback.html">Feedback</a>
+      <a href="../login_signup_profile/login.html">Profile</a>
+   </div>
+</nav>
+    
+
+
+    <form action="#" method="get"> 
+        
+    <h1>Search for Languages</h1>
+
+    <label for="lang-search">Choose a language:</label>
+    <input list="languages" name="lang-search" id="lang-search" placeholder="Type C# or C++...">
+
+    <datalist id="languages">
+        <option value="C#">
+        <option value="C++">
+        <option value="Python">
+        <option value="Java">
+        <option value="JavaScript">
+        <option value="PHP">
+    </datalist>
+
+    <button type="submit" id="searchBtn">Search</button>
+
+    </form>
+
+    <script src="search.js"></script>
+</body>
+</html>

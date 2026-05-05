@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Professional Path | CS Club</title>
+    
+    <link rel="stylesheet" href="courses2.css"> 
+    
+    <style>
+        :root {
+            --ai-primary: #1195ff;
+            --ai-blue: #3b82f6;
+            --ai-orange: #ea580c;
+        }
+
+        .ai-hero {
+            background: #1195ff;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .ai-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+
+        .ai-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ai-tag {
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .tag-en { background: #dbeafe; color: #1e40af; }
+        .tag-ar { background: #ffedd5; color: #9a3412; }
+        .tag-gym { background: #f1f5f9; color: #475569; }
+
+        .meta-info {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .meta-info p {
+            font-size: 14px;
+            color: #64748b;
+            margin: 5px 0;
+        }
+
+        .meta-info i { margin-right: 8px; color: var(--ai-blue); }
+
+        .btn-start {
+            display: block;
+            text-align: center;
+            background: var(--ai-blue);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .rtl-section { direction: rtl; text-align: right; }
+        .rtl-section .meta-info i { margin-left: 8px; margin-right: 0; }
+    </style>
+</head>
+
+<body>
+
+    
+    <header class="header">
+
+        <div class="left-section">
+            <nav>
+                <button class="menu-btn">☰</button>
+
+                <ul class="menu">
+                    <li><a href="../home2/index_1.html">Home</a></li>
+                    <li><a href="../courses2/courses2.html">Courses</a></li>
+                    <li><a href="../feedback2/feedback2.html">Feedback</a></li>
+                    <li><a href="../aboutus2/aboutus2.html">About Us</a></li> 
+                    <li><a href="../login2_signup2_profile2/login2.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">
+            CS CLUB
+        </div>
+
+        <div class="right-section">
+            <a href="../search2/search.html" class="btn">Search</a>
+            <a href="../login2_signup2_profile2/login2.html" class="btn">Login</a>
+        </div>
+
+    </header>
+
+    
+    <section class="ai-hero">
+        <h1>Artificial Intelligence Track</h1>
+        <p>Your Comprehensive Roadmap to Master AI & Machine Learning</p>
+    </section>
+
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        
+        
+        <section class="track-section">
+            <h2 style="border-left: 5px solid var(--ai-blue); padding-left: 15px; margin-bottom: 30px;">Section 1: English Curriculum</h2>
+            <div class="ai-grid">
+                
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-en">English</span>
+                        <h3>Mathematics for Machine Learning</h3>
+                        <p>By Imperial College London</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> Duration: <b>20 Hours</b></p>
+                        <p><i class="fas fa-check-circle"></i> Access: <b>Full Curriculum</b></p>
+                        <a href="https://www.coursera.org/specializations/mathematics-machine-learning" target="_blank" class="btn-start">View Course</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-en">English</span>
+                        <h3>Python for Data Science & AI</h3>
+                        <p>By IBM Skills</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> Duration: <b>25 Hours</b></p>
+                        <p><i class="fas fa-check-circle"></i> Access: <b>Full Curriculum</b></p>
+                        <a href="https://www.coursera.org/learn/python-for-applied-data-science-ai" target="_blank" class="btn-start">View Course</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-en">English</span>
+                        <h3>Machine Learning Specialization</h3>
+                        <p>By Andrew Ng</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> Duration: <b>40 Hours</b></p>
+                        <p><i class="fas fa-check-circle"></i> Access: <b>Full Curriculum</b></p>
+                        <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" class="btn-start">View Course</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-en">English</span>
+                        <h3>Deep Learning Specialization</h3>
+                        <p>By DeepLearning.AI</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> Duration: <b>65 Hours</b></p>
+                        <p><i class="fas fa-check-circle"></i> Access: <b>Full Curriculum</b></p>
+                        <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="btn-start">View Course</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="track-section rtl-section">
+            <h2 style="border-right: 5px solid var(--ai-orange); padding-right: 15px; margin-bottom: 30px;">المصادر العربية</h2>
+            <div class="ai-grid">
+                
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-ar">بالعربية</span>
+                        <h3>رياضيات الذكاء الاصطناعي</h3>
+                        <p>بواسطة: هشام عاصم</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> المدة: <b>15 ساعة</b></p>
+                        <p><i class="fas fa-video"></i> المحتوى: <b>كامل ومجاني</b></p>
+                        <a href="https://www.youtube.com/playlist?list=PL6-3IRz2XF5VofS_V9_V8v-V55G4rW4x4" target="_blank" class="btn-start" style="background: var(--ai-orange);">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-ar">بالعربية</span>
+                        <h3>بايثون للمبتدئين</h3>
+                        <p>بواسطة: أسامة الزيرو</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> المدة: <b>30 ساعة</b></p>
+                        <p><i class="fas fa-video"></i> المحتوى: <b>كامل ومجاني</b></p>
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mSip" target="_blank" class="btn-start" style="background: var(--ai-orange);">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-ar">بالعربية</span>
+                        <h3>دورة تعلم الآلة الشاملة</h3>
+                        <p>بواسطة: هشام عاصم</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> المدة: <b>25 ساعة</b></p>
+                        <p><i class="fas fa-video"></i> المحتوى: <b>كامل ومجاني</b></p>
+                        <a href="https://www.youtube.com/playlist?list=PL6-3IRz2XF5VofS_V9_V8v-V55G4rW4x4" target="_blank" class="btn-start" style="background: var(--ai-orange);">ابدأ الآن</a>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div>
+                        <span class="ai-tag tag-ar">بالعربية</span>
+                        <h3>التعلم العميق والشبكات العصبية</h3>
+                        <p>بواسطة: هشام عاصم</p>
+                    </div>
+                    <div class="meta-info">
+                        <p><i class="fas fa-clock"></i> المدة: <b>15 ساعة</b></p>
+                        <p><i class="fas fa-video"></i> المحتوى: <b>كامل ومجاني</b></p>
+                        <a href="https://youtube.com/playlist?list=PL6-3IRz2XF5X-lzMZdmkvGAx1a3kIm7_I" target="_blank" class="btn-start" style="background: var(--ai-orange);">ابدأ الآن</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="track-section">
+            <h2 style="text-align: center; margin-bottom: 40px;">AI-GYM 💪</h2>
+            <div class="ai-grid">
+                
+                <div class="ai-card" style="border-top: 4px solid #3b82f6;">
+                    <span class="ai-tag tag-gym">Practice</span>
+                    <h3>Kaggle Labs</h3>
+                    <p>The ultimate place for real-world datasets and AI competitions.</p>
+                    <a href="https://www.kaggle.com" target="_blank" class="btn-start" style="background:#3b82f6">Enter Gym</a>
+                </div>
+
+                <div class="ai-card" style="border-top: 4px solid #facc15;">
+                    <span class="ai-tag tag-gym">Models</span>
+                    <h3>Hugging Face</h3>
+                    <p>The "GitHub" of AI. Build, train, and deploy SOTA models.</p>
+                    <a href="https://huggingface.co" target="_blank" class="btn-start" style="background:#facc15; color:#333">Enter Gym</a>
+                </div>
+
+                <div class="ai-card" style="border-top: 4px solid #ef4444;">
+                    <span class="ai-tag tag-gym">Cloud GPU</span>
+                    <h3>Google Colab</h3>
+                    <p>Free cloud Jupyter notebooks with powerful GPUs.</p>
+                    <a href="https://colab.research.google.com" target="_blank" class="btn-start" style="background:#ef4444">Enter Gym</a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 CS CLUB. All Rights Reserved.
+        </p>
+
+    
+    </footer>
+
+
+
+    <script src="courses2.js"></script>
+</body>
+</html>

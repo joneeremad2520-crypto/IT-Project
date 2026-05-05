@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Track | CS CLUB</title>
+
+    <style>
+        :root{
+            --gold:#f4b400;
+            --bg:#0a0a0a;
+            --card-bg:#111;
+            --border:#222;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:var(--bg);
+            color:white;
+            line-height:1.6;
+        }
+
+        .navbar{
+            padding:20px 40px;
+            border-bottom:1px solid var(--border);
+            display:flex;
+            align-items:center;
+        }
+
+        .logo{
+            color:var(--gold);
+            text-decoration:none;
+            font-size:1.4rem;
+            font-weight:900;
+        }
+
+        .logo:hover{
+            color:white;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        header{
+            padding:40px 0;
+            border-bottom:1px solid var(--border);
+            margin-bottom:40px;
+        }
+
+        header h1{
+            color:var(--gold);
+            margin-bottom:10px;
+        }
+
+        .roadmap{
+            position:relative;
+            padding-left:30px;
+            border-left:1px solid var(--gold);
+            margin-left:10px;
+            margin-bottom:60px;
+        }
+
+        .step{
+            position:relative;
+            margin-bottom:40px;
+        }
+
+        .step::before{
+            content:'';
+            position:absolute;
+            left:-36px;
+            top:5px;
+            width:10px;
+            height:10px;
+            background:var(--gold);
+            border-radius:50%;
+        }
+
+        .course-card{
+            padding:5px 10px;
+        }
+
+        .course-card h3{
+            font-size:1.4rem;
+            margin-bottom:8px;
+        }
+
+        .course-details{
+            color:#888;
+            font-size:.95rem;
+            display:block;
+            margin-bottom:15px;
+        }
+
+        .course-details b{
+            color:var(--gold);
+        }
+
+        .btn-link{
+            color:var(--gold);
+            text-decoration:none;
+            border:1px solid var(--gold);
+            padding:8px 18px;
+            border-radius:6px;
+            display:inline-block;
+            transition:.3s;
+        }
+
+        .btn-link:hover{
+            background:var(--gold);
+            color:black;
+        }
+
+        .rtl{
+            direction:rtl;
+            text-align:right;
+        }
+
+        .roadmap.rtl{
+            border-left:none;
+            border-right:1px solid var(--gold);
+            padding-left:0;
+            padding-right:30px;
+            margin-left:0;
+            margin-right:10px;
+        }
+
+        .roadmap.rtl .step::before{
+            left:auto;
+            right:-36px;
+        }
+
+        .gym-section{
+            margin-top:80px;
+            padding-top:40px;
+            border-top:1px solid var(--border);
+        }
+
+        .gym-title{
+            text-align:center;
+            color:var(--gold);
+            font-size:1.8rem;
+            margin-bottom:30px;
+            display:block;
+        }
+
+        .gym-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .gym-card{
+            background:var(--card-bg);
+            border:1px solid var(--border);
+            padding:20px;
+            border-radius:12px;
+            text-align:center;
+            transition:.3s;
+        }
+
+        .gym-card:hover{
+            border-color:var(--gold);
+            transform:translateY(-5px);
+        }
+
+        .gym-card p{
+            color:#777;
+            margin:15px 0;
+        }
+
+        footer{
+            text-align:center;
+            padding:60px 0;
+            color:#444;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>
+            <a href="index.html" class="logo">CS CLUB</a>
+        </h1>
+    </nav>
+
+
+    <div class="container">
+
+        <header>
+            <h1>UI / UX Professional Path</h1>
+
+            <p style="color:#666;">
+                Follow these steps sequentially to master UI Design, UX Principles, and Figma.
+            </p>
+        </header>
+
+
+        
+        <h2 style="color:var(--gold); margin-bottom:30px;">
+            Step 1: English Curriculum
+        </h2>
+
+        <div class="roadmap">
+
+
+            <div class="step">
+                <div class="course-card">
+
+                    <h3>UI / UX Design</h3>
+
+                    <span class="course-details">
+                        Duration: <b>9 Days 8h 57m 56s</b> |
+                        Videos: <b>78</b> |
+                        Instructor: <b>Simplilearn Experts</b>
+                    </span>
+
+                    <a href="https://youtube.com/playlist?list=PLEiEAq2VkUULzCiDV5VyF7zR6zoDIT_eH"
+                       target="_blank"
+                       class="btn-link">
+                        View Course
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="course-card">
+
+                    <h3>Figma</h3>
+
+                    <span class="course-details">
+                        Duration: <b>8h 25m 7s</b> |
+                        Videos: <b>9</b> |
+                        Instructor: <b>The Cutting Edge School</b>
+                    </span>
+
+                    <a href="https://youtube.com/playlist?list=PLlHtucAD9KT19ckHqXpPSStZOyDSq9AW-"
+                       target="_blank"
+                       class="btn-link">
+                        View Course
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        
+        <div class="rtl">
+
+            <h2 style="color:var(--gold); margin-bottom:30px;">
+                الخطوة الثانية: المصادر العربية
+            </h2>
+
+            <div class="roadmap rtl">
+
+
+                <div class="step">
+                    <div class="course-card">
+
+                        <h3>UI / UX Design</h3>
+
+                        <span class="course-details">
+                            المدة: <b>6h 5m 39s</b> |
+                            الفيديوهات: <b>21</b> |
+                            المحاضر: <b>إيهاب فايز</b>
+                        </span>
+
+                        <a href="https://youtube.com/playlist?list=PLjzhiGLyugKwnM6uN4NXhfpU8L7XvtDEv"
+                           target="_blank"
+                           class="btn-link">
+                            ابدأ الآن
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="course-card">
+
+                        <h3>Figma</h3>
+
+                        <span class="course-details">
+                            المدة: <b>11h 15m 4s</b> |
+                            الفيديوهات: <b>59</b> |
+                            المحاضر: <b>Adel Gabr</b>
+                        </span>
+
+                        <a href="https://youtube.com/playlist?list=PL46oPSW-1dJocf6ILQW2GAsmwGoa85pzP"
+                           target="_blank"
+                           class="btn-link">
+                            ابدأ الآن
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        
+        <div class="gym-section">
+
+            <span class="gym-title">
+                DESIGN GYM 🎨
+            </span>
+
+            <div class="gym-grid">
+
+
+                <div class="gym-card">
+
+                    <h3>Figma Community</h3>
+
+                    <p>
+                        Practice with real design files and UI kits.
+                    </p>
+
+                    <a href="https://figma.com/community"
+                       target="_blank"
+                       class="btn-link">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+                <div class="gym-card">
+
+                    <h3>Dribbble</h3>
+
+                    <p>
+                        Explore professional UI inspiration.
+                    </p>
+
+                    <a href="https://dribbble.com"
+                       target="_blank"
+                       class="btn-link">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+                <div class="gym-card">
+
+                    <h3>Behance</h3>
+
+                    <p>
+                        Build your design portfolio.
+                    </p>
+
+                    <a href="https://behance.net"
+                       target="_blank"
+                       class="btn-link">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        © 2026 CS CLUB | UI/UX TRACK SYSTEM
+    </footer>
+
+</body>
+</html>

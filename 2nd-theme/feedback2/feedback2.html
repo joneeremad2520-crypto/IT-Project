@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback2.css">
+</head>
+<body>
+
+    <header class="header">
+        
+        <div class="left-section">
+            <nav>
+                <button class="menu-btn">☰</button>
+                <ul class="menu">
+                    <li><a href="../home2/index_1.html">Home</a></li>
+<li><a href="../courses2/courses2.html">Courses</a></li>
+<li><a href="../feedback2/feedback2.html">Feedback</a></li>
+<li><a href="../aboutus2/aboutus2.html">About Us</a></li> 
+<li><a href="../login2_signup2_profile2/login2.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">
+            CS CLUB
+        </div>
+
+       
+        <div class="right-section">
+            <a href="../search2/search2.html" class="btn">Search</a>
+            <a href="../login2_signup2_profile2/login2.html" class="btn">Login</a>
+        </div>
+    </header>
+
+    <div class="page-wrapper" id="mainContainer">
+        <h1 class="page-title">Feedback Form</h1>
+        
+        <div class="feedback-scene">
+            <div class="feedback-card" id="flipCard">
+                
+                <div class="card-face card-front">
+                    <div class="card-header">
+                        <button class="close-btn" id="closeBtn">&times;</button>
+                        <h2>Send us your feedback!</h2>
+                        <p>Do you have a suggestion or found some bug?<br>Let us know in the field below.</p>
+                    </div>
+
+                    <div class="card-body">
+                        <form id="feedbackForm">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" id="fullName" placeholder="e.g., John Doe" required>
+                                <span class="error-msg" id="nameError">Name must be at least 3 characters</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                                <span class="error-msg" id="emailError">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>How was your experience?</label>
+                                <select id="rating" required>
+                                    <option value="5">Excellent 😃</option>
+                                    <option value="4">Good 🙂</option>
+                                    <option value="3">Average 😐</option>
+                                    <option value="2">Poor 🙁</option>
+                                    <option value="1">Terrible 😡</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Describe your experience here...</label>
+                                <textarea id="comments" rows="4" placeholder="Write your feedback..." required></textarea>
+                            </div>
+
+                            <div class="type-options">
+                                <label><input type="radio" name="feedbackType" value="bug"> Bug</label>
+                                <label><input type="radio" name="feedbackType" value="suggestion"> Suggestion</label>
+                                <label><input type="radio" name="feedbackType" value="others" checked> Others</label>
+                            </div>
+
+                            <button type="submit" class="submit-btn" id="submitBtn">Send Feedback</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card-face card-back">
+                    <div class="success-icon">🚀</div>
+                    <h3>Thank You!</h3>
+                    <p>Your feedback has been successfully submitted.</p>
+                    <button class="submit-btn" id="resetCardBtn" style="margin-top: 25px; width: 80%;">Send Another</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        © 2026 CS CLUB. All Rights Reserved.
+    </div>
+
+    <script src="feedback2.js"></script>
+
+</body>
+</html>

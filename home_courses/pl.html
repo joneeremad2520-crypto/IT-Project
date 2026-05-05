@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL Path | CS Club</title>
+    
+    <style>
+        :root {
+            --gold: #f4b400;
+            --bg: #0a0a0a;
+            --card-bg: #111;
+            --border: #222;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--bg); color: white; line-height: 1.6; }
+
+       
+        .navbar {
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .logo:hover { color: white; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        header { padding: 40px 0; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+        header h1 { color: var(--gold); font-size: 2rem; }
+
+        
+        .roadmap {
+            position: relative;
+            padding-left: 30px;
+            border-left: 1px solid var(--gold);
+            margin-left: 10px;
+            margin-bottom: 60px;
+        }
+
+        .step { position: relative; margin-bottom: 40px; }
+
+        .step::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .course-card { padding: 5px 10px; }
+        .course-card h3 { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
+        
+        .course-details { 
+            color: #888; 
+            font-size: 0.95rem; 
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .course-details b { color: var(--gold); font-weight: 500; }
+
+        .btn-link {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid var(--gold);
+            padding: 5px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-link:hover { background: var(--gold); color: black; }
+
+        
+        .gym-section {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        .gym-title { 
+            text-align: center; 
+            color: var(--gold); 
+            font-size: 1.8rem; 
+            margin-bottom: 30px; 
+            display: block;
+        }
+
+        .gym-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gym-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .gym-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .gym-card h4 { margin-bottom: 10px; color: #fff; }
+        .gym-card p { font-size: 0.85rem; color: #666; margin-bottom: 15px; }
+
+        .rtl { direction: rtl; text-align: right; }
+        .roadmap.rtl { border-left: none; border-right: 1px solid var(--gold); padding-left: 0; padding-right: 30px; margin-left: 0; margin-right: 10px; }
+        .roadmap.rtl .step::before { left: auto; right: -36px; }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1><a href="index.html" class="logo">CS CLUB</a></h1>
+    </nav>
+
+    <div class="container">
+
+        <header>
+            <h1>Programming Languages Path</h1>
+            <p style="color: #555;">Follow these steps sequentially to master programming fundamentals.</p>
+        </header>
+
+
+        
+        <h2 style="color: var(--gold); margin-bottom: 30px;">Step 1: English Curriculum</h2>
+
+        <div class="roadmap">
+
+            <div class="step">
+                <div class="course-card">
+                    <h3>Python Programming</h3>
+                    <span class="course-details">
+                        Duration: <b>8h 41m 54s</b> |
+                        Videos: <b>1</b> |
+                        Instructor: <b>freeCodeCamp.org</b>
+                    </span>
+                    <a href="https://youtu.be/qwAFL1597eM?si=LIaKpvrSOs1boIq6" class="btn-link" target="_blank">View Course</a>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="course-card">
+                    <h3>C# Programming</h3>
+                    <span class="course-details">
+                        Duration: <b>8h 17m 11s</b> |
+                        Videos: <b>1</b> |
+                        Instructor: <b>freeCodeCamp.org</b>
+                    </span>
+                    <a href="https://youtu.be/YrtFtdTTfv0?si=T50Cg_GvHEEGcrY6" class="btn-link" target="_blank">View Course</a>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="course-card">
+                    <h3>C++ Programming</h3>
+                    <span class="course-details">
+                        Duration: <b>4h 1m 19s</b> |
+                        Videos: <b>1</b> |
+                        Instructor: <b>freeCodeCamp.org</b>
+                    </span>
+                    <a href="https://youtu.be/vLnPwxZdW4Y?si=a7c8SjxME3jcRKJ-" class="btn-link" target="_blank">View Course</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="rtl">
+
+            <h2 style="color: var(--gold); margin-bottom: 30px;">الخطوة الثانية: المصادر العربية</h2>
+
+            <div class="roadmap rtl">
+
+                <div class="step">
+                    <div class="course-card">
+                        <h3>بايثون</h3>
+                        <span class="course-details">
+                            المدة: <b>20h 24m 59s</b> |
+                            الفيديوهات: <b>152</b> |
+                            المحاضر: <b>Elzero Web School</b>
+                        </span>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs" class="btn-link" target="_blank">ابدأ الآن</a>
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="course-card">
+                        <h3>#C</h3>
+                        <span class="course-details">
+                            المدة: <b>16h 45m 29s</b> |
+                            الفيديوهات: <b>59</b> |
+                            المحاضر: <b>محمد المهدي</b>
+                        </span>
+                        <a href="https://youtube.com/playlist?list=PLsV97AQt78NT0H8J71qe7edwRpAirfqOI" class="btn-link" target="_blank">ابدأ الآن</a>
+                    </div>
+                </div>
+
+
+                <div class="step">
+                    <div class="course-card">
+                        <h3>++C</h3>
+                        <span class="course-details">
+                            المدة: <b>11h 18m 27s</b> |
+                            الفيديوهات: <b>78</b> |
+                            المحاضر: <b>Elzero Web School</b>
+                        </span>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS" class="btn-link" target="_blank">ابدأ الآن</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        
+        <div class="gym-section">
+
+            <span class="gym-title">CODE-GYM 💪</span>
+
+            <div class="gym-grid">
+
+                <div class="gym-card">
+                    <h4>LeetCode</h4>
+                    <p>Practice algorithms and problem solving challenges.</p>
+                    <a href="https://leetcode.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+
+                <div class="gym-card">
+                    <h4>HackerRank</h4>
+                    <p>Strengthen your programming logic and coding skills.</p>
+                    <a href="https://hackerrank.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+
+                <div class="gym-card">
+                    <h4>Codeforces</h4>
+                    <p>Compete with programmers and solve advanced problems.</p>
+                    <a href="https://codeforces.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer style="text-align: center; padding: 60px 0; color: #333; font-size: 0.8rem;">
+        © 2026 CS CLUB | PL TRACK SYSTEM
+    </footer>
+
+    <script src="js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - CS Club</title>
+    <link rel="stylesheet" href="signup_login_profile.css">
+</head>
+<body>
+    <header class="glass-header"> 
+    <div class="logo">CS CLUB</div>
+    <nav class="nav"> 
+    <a href="../home_courses/index.html">Home</a>
+    <a href="../home_courses/courses.html">Courses</a> 
+    <a href="../feedback/feedback.html">Feedback</a>
+    <a href="../login_signup_profile/profile.html">Profile</a>
+</nav>
+
+</header>
+    <div class="auth-container">
+        <h2>Create Account</h2>
+        <form id="signupForm">
+            <input type="text" id="fName" placeholder="Name">
+            <div id="fNameError" class="error-msg">Name must be at least 3 letters.</div>
+
+            <input type="email" id="email" placeholder="Email Address">
+            <div id="emailError" class="error-msg">Please enter a valid email.</div>
+
+            <input type="password" id="pass" placeholder="Password">
+            <div id="passError" class="error-msg">Password must be 6+ characters.</div>
+<br>
+<div id="successMsg" style="color: #4BB543; margin-top: 10px; display: none; font-weight: bold;"></div>
+<br>
+            <button type="submit" class="btn-submit">Sign Up</button>
+        </form>
+        <p style="font-size: 14px; margin-top: 15px;">Already have an account? <a href="login.html" style="color: var(--accent-color);">Log In</a></p>
+    </div>
+     <footer style="background-color: black; color: white; text-align:center; padding:20px 0; width:100%; position:fixed; bottom:0; left:0;">
+        <p>© 2026 CS CLUB. All Rights Reserved.</p>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+</html>

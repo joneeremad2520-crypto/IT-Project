@@ -1,0 +1,129 @@
+:root {
+    --main-bg:#081718;
+    --container-bg: #2c3034;
+    --accent-color: #ffb703; 
+    --input-bg:#081718;
+    --text-white: #ffffff;
+    --text-gray: #8a99a4;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--main-bg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px; 
+    position: fixed;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; 
+    border-radius: 20px;
+    
+    
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    color: white;
+    z-index: 1000;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f4b400; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #f4b400;
+}
+
+.btn {
+    background: #f4b400;
+    border: none;
+    padding: 12px 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #1A6F73;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(244, 180, 0, 0.4);
+}
+
+
+.auth-container {
+    background: var(--container-bg);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: var(--input-bg);
+    border: 1px solid #2d3e4a;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: none; 
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+}

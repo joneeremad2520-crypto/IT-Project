@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Track | CS Club</title>
+    
+    <link rel="stylesheet" href="courses2.css">
+    
+    <style>
+        :root {
+            --uiux-primary: #1195ff;
+            --uiux-secondary: #a29bfe;
+            --uiux-dark: #2d3436;
+            --uiux-bg: #f9f9fb;
+        }
+
+        body { font-family: sans-serif; margin: 0; background: var(--uiux-bg); }
+
+        
+        .uiux-hero {
+            background:  #1195ff;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .uiux-hero h1 { font-size: 2.8rem; margin: 0; }
+        .uiux-hero p { color: #e0e7ff; margin-top: 10px; opacity: 0.9; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+
+       
+        .track-section-header {
+            border-left: 5px solid var(--uiux-primary);
+            padding-left: 15px;
+            margin: 40px 0 25px;
+            font-size: 1.6rem;
+            color: var(--uiux-dark);
+            font-weight: bold;
+        }
+
+        .track-section-header.rtl {
+            border-left: none;
+            border-right: 5px solid #ff7675;
+            padding-left: 0;
+            padding-right: 15px;
+            text-align: right;
+            direction: rtl;
+        }
+
+       
+        .design-grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+        }
+
+        .design-card-item {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.3s ease;
+        }
+
+        .design-card-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.1);
+            border-color: var(--uiux-primary);
+        }
+
+        .badge-tag {
+            background: #f3f0ff;
+            color: var(--uiux-primary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            width: fit-content;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .design-card-item h3 { margin: 0 0 8px 0; color: var(--uiux-dark); }
+        .instructor-name { color: #636e72; font-size: 0.9rem; margin-bottom: 20px; }
+
+        
+        .info-details {
+            border-top: 1px solid #f1f2f6;
+            padding-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-row {
+            font-size: 0.85rem;
+            color: #2d3436;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .start-btn {
+            background: var(--uiux-primary);
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .start-btn:hover { background: #5f27cd; }
+
+        
+        .rtl-card { direction: rtl; }
+        .rtl-card .badge-tag { background: #fff5f5; color: #ff7675; }
+
+        @media (max-width: 600px) {
+            .design-grid-layout { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+   
+     <header class="header">
+
+       
+        <div class="left-section">
+            <nav>
+    <button class="menu-btn">☰</button>
+
+    <ul class="menu">
+        <li><a href="../home2/index_1.html">Home</a></li>
+        <li><a href="../courses2/courses2.html">Courses</a></li>
+        <li><a href="../feedback2/feedback2.html">Feedback</a></li>
+        <li><a href="../aboutus2/aboutus2.html">About Us</a></li> 
+        <li><a href="../login2_signup2_profile2/login2.html">Profile</a></li>
+    </ul>
+</nav>
+        </div>
+
+
+        
+        <div class="logo">
+            CS CLUB
+        </div>
+
+
+        
+        <div class="right-section">
+            <a href="../search2/search.html" class="btn">Search</a>
+            <a href="../login2_signup2_profile2/login2.html" class="btn">Login</a>
+        </div>
+
+    </header>
+
+
+    <header class="uiux-hero">
+        <div class="hero-content">
+            <h1>UI/UX Design Track</h1>
+            <p>Design beautiful interfaces and seamless user experiences.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        
+        <div class="track-section-header">Section 1: English Curriculum</div>
+        <div class="design-grid-layout">
+            
+            <div class="design-card-item">
+                <div>
+                    <span class="badge-tag">English</span>
+                    <h3>UI/UX Professional Course</h3>
+                    <p class="instructor-name">By Simplilearn</p>
+                    <div class="info-details">
+                        <div class="info-row"> Duration: 9d 8h 57m</div>
+                        <div class="info-row"> Lessons: 78 Videos</div>
+                    </div>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLEiEAq2VkUULzCiDV5VyF7zR6zoDIT_eH" class="start-btn" target="_blank">Start Path</a>
+            </div>
+
+           
+            <div class="design-card-item">
+                <div>
+                    <span class="badge-tag">English</span>
+                    <h3>Figma for Designers</h3>
+                    <p class="instructor-name">By The Cutting Edge School</p>
+                    <div class="info-details">
+                        <div class="info-row"> Duration: 8h 25m</div>
+                        <div class="info-row"> Lessons: 9 Videos</div>
+                    </div>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLlHtucAD9KT19ckHqXpPSStZOyDSq9AW-" class="start-btn" target="_blank">View Course</a>
+            </div>
+        </div>
+
+        
+        <div class="track-section-header rtl">المصادر العربية</div>
+        <div class="design-grid-layout" style="margin-bottom: 80px;">
+           
+            <div class="design-card-item rtl-card">
+                <div>
+                    <span class="badge-tag">عربي</span>
+                    <h3>أساسيات تجربة المستخدم</h3>
+                    <p class="instructor-name">بواسطة إيهاب فايز</p>
+                    <div class="info-details">
+                        <div class="info-row"> المدة: 6 ساعات</div>
+                        <div class="info-row"> الدروس: 21 فيديو</div>
+                    </div>
+                </div>
+                <a href="https://youtube.com/playlist?list=PLjzhiGLyugKwnM6uN4NXhfpU8L7XvtDEv" class="start-btn" target="_blank">ابدأ الآن</a>
+            </div>
+
+            
+            <div class="design-card-item rtl-card">
+                <div>
+                    <span class="badge-tag">عربي</span>
+                    <h3>احتراف أداة فيجما</h3>
+                    <p class="instructor-name">بواسطة عادل جبر</p>
+                    <div class="info-details">
+                        <div class="info-row">المدة: 11 ساعة</div>
+                        <div class="info-row"> الدروس: 59 فيديو</div>
+                    </div>
+                </div>
+                <a href="https://youtube.com/playlist?list=PL46oPSW-1dJocf6ILQW2GAsmwGoa85pzP" class="start-btn" target="_blank">ابدأ الآن</a>
+            </div>
+        </div>
+
+    </div>
+
+     <footer>
+
+        <p>
+            © 2026 CS CLUB. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="courses2.js"></script>
+</body>
+</html>

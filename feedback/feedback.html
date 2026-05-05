@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- حولنا اللغة لإنجليزي وشيلنا اتجاه اليمين للشمال عشان يبقى الافتراضي من الشمال لليمين -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    
+    <!-- ربطنا ملف الـ CSS -->
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <!-- الصندوق بتاع الفورم -->
+    <div class="feedback-container">
+        
+        <!-- قسم العنوان (ضفناله id عشان نعرف نخفيه بعدين) -->
+        <header id="formHeader" class="feedback-header">
+            <h2>We Value Your Feedback</h2>
+            <p>Please let us know how we can improve our services.</p>
+        </header>
+        
+        <!-- الفورم نفسها (ضفنالها id="feedbackForm") -->
+        <form id="feedbackForm" action="#" class="feedback-form">
+            
+            <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" placeholder="e.g., John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">How would you rate your experience?</label>
+                <select id="rating" name="rating">
+                    <option value="5">Excellent</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Poor</option>
+                    <option value="1">Terrible</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments <span class="required">*</span></label>
+                <textarea id="comments" rows="4" placeholder="Tell us about your experience..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+
+        <!-- دي رسالة الشكر الجديدة (واخدة كلاس hidden عشان ماتظهرش أول ما تفتح الصفحة) -->
+        <div id="thankYouMsg" class="thank-you-message hidden">
+            <!-- ضفنا علامة صح (إيموجي) عشان تدي شكل حلو -->
+            <h3>Thank You! 😊</h3>
+            <p>Your feedback has been successfully submitted.</p>
+        </div>
+
+    </div>
+
+    <!-- السطر ده هو اللي بيربط ملف الجافا سكريبت الجديد بصفحة الـ HTML -->
+    <script src="feedback.js"></script>
+
+</body>
+</html>
