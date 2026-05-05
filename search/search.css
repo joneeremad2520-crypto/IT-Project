@@ -181,9 +181,9 @@ button:active {
     transform: scale(0.98);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 
-/* Mobile Devices (< 768px) */
+
+
 @media (max-width: 767px) {
     * {
         font-size: 14px;
@@ -237,7 +237,7 @@ button:active {
     }
 }
 
-/* Tablet Devices (768px - 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     nav {
         padding: 12px 25px;
@@ -277,7 +277,7 @@ button:active {
     }
 }
 
-/* Large Desktop (> 1024px) */
+
 @media (min-width: 1025px) {
     nav {
         width: 90%;

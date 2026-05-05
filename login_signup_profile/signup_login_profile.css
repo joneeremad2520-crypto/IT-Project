@@ -128,9 +128,9 @@ td {
     text-align: left;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 
-/* Mobile Devices (< 768px) */
+
+
 @media (max-width: 767px) {
     * {
         font-size: 14px;
@@ -195,7 +195,7 @@ td {
     }
 }
 
-/* Tablet Devices (768px - 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
         padding: 12px 25px;
@@ -234,7 +234,7 @@ td {
     }
 }
 
-/* Large Desktop (> 1024px) */
+
 @media (min-width: 1025px) {
     header {
         width: 90%;

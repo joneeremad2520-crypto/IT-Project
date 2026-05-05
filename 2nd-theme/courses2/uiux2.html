@@ -125,6 +125,45 @@
 
         @media (max-width: 600px) {
             .design-grid-layout { grid-template-columns: 1fr; }
+
+        }
+        .gym-section{
+            margin-top:80px;
+            padding-top:40px;
+            border-top:1px solid var(--border);
+        }
+
+        .gym-title{
+            text-align:center;
+            color:var(--gold);
+            font-size:1.8rem;
+            margin-bottom:30px;
+            display:block;
+        }
+
+        .gym-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .gym-card{
+            background:var(--card-bg);
+            border:1px solid var(--border);
+            padding:20px;
+            border-radius:12px;
+            text-align:center;
+            transition:.3s;
+        }
+
+        .gym-card:hover{
+            border-color:var(--gold);
+            transform:translateY(-5px);
+        }
+
+        .gym-card p{
+            color:#777;
+            margin:15px 0;
         }
     </style>
 </head>
@@ -235,6 +274,71 @@
                 </div>
                 <a href="https://youtube.com/playlist?list=PL46oPSW-1dJocf6ILQW2GAsmwGoa85pzP" class="start-btn" target="_blank">ابدأ الآن</a>
             </div>
+        </div>
+
+    </div>
+     <div class="gym-section">
+
+            <span class="gym-title">
+                DESIGN GYM 🎨
+            </span>
+
+            <div class="gym-grid">
+
+
+                <div class="gym-card">
+
+                    <h3>Figma Community</h3>
+
+                    <p>
+                        Practice with real design files and UI kits.
+                    </p>
+
+                    <a href="https://figma.com/community"
+                       target="_blank"
+                       class="btn-link">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+                <div class="gym-card">
+
+                    <h3>Dribbble</h3>
+
+                    <p>
+                        Explore professional UI inspiration.
+                    </p>
+
+                    <a href="https://dribbble.com"
+                       target="_blank"
+                       class="btn-link">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+                <div class="gym-card">
+
+                    <h3>Behance</h3>
+
+                    <p>
+                        Build your design portfolio.
+                    </p>
+
+                    <a href="https://behance.net"
+                       target="_blank"
+                       class="btn-link">
+                        Enter Gym
+                    </a>
+
+                </div>
+
+
+            </div>
+
         </div>
 
     </div>

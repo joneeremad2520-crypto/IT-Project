@@ -97,6 +97,42 @@
             font-size: 0.85rem;
             color: #666;
         }
+        .gym-section {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        .gym-title { 
+            text-align: center; 
+            color: var(--gold); 
+            font-size: 1.8rem; 
+            margin-bottom: 30px; 
+            display: block;
+        }
+
+        .gym-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gym-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .gym-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        .gym-card h4 { margin-bottom: 10px; color: #1195ff; }
+        .gym-card p { font-size: 0.85rem; color: #1195ff; margin-bottom: 15px; }
+
+        .rtl { direction: rtl; text-align: right; }
+        .roadmap.rtl { border-left: none; border-right: 1px solid var(--gold); padding-left: 0; padding-right: 30px; margin-left: 0; margin-right: 10px; }
+        .roadmap.rtl .step::before { left: auto; right: -36px; }
     </style>
 </head>
 <body>
@@ -213,6 +249,35 @@
             </div>
         </div>
     </section>
+    <div class="gym-section">
+
+            <span class="gym-title">CODE-GYM 💪</span>
+
+            <div class="gym-grid">
+
+                <div class="gym-card">
+                    <h4>LeetCode</h4>
+                    <p>Practice algorithms and problem solving challenges.</p>
+                    <a href="https://leetcode.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+
+                <div class="gym-card">
+                    <h4>HackerRank</h4>
+                    <p>Strengthen your programming logic and coding skills.</p>
+                    <a href="https://hackerrank.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+
+                <div class="gym-card">
+                    <h4>Codeforces</h4>
+                    <p>Compete with programmers and solve advanced problems.</p>
+                    <a href="https://codeforces.com" class="btn-link" target="_blank">Enter Gym</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <footer>
        

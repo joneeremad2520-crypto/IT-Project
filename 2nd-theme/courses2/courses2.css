@@ -286,9 +286,9 @@ footer {
   width: 100%;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 
-/* Mobile Devices (< 768px) */
+
+
 @media (max-width: 767px) {
     * {
         font-size: 14px;
@@ -374,7 +374,7 @@ footer {
     }
 }
 
-/* Tablet Devices (768px - 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .header {
         width: 93%;
@@ -415,7 +415,7 @@ footer {
     }
 }
 
-/* Large Desktop (> 1024px) */
+
 @media (min-width: 1025px) {
     .header {
         width: 95%;
